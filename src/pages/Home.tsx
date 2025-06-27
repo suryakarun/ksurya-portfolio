@@ -29,10 +29,15 @@ const Home = () => {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <button className="group flex items-center space-x-2 bg-cyan-500 hover:bg-cyan-400 text-black px-6 py-3 rounded-lg font-mono font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center space-x-2 bg-cyan-500 hover:bg-cyan-400 text-black px-6 py-3 rounded-lg font-mono font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30"
+            >
               <Download size={20} />
               <span>Download Resume</span>
-            </button>
+            </a>
             
             <Link 
               to="/projects"

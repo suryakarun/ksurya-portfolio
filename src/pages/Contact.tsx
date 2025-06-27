@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { Mail, MapPin, Send, Github, Linkedin, FileText } from 'lucide-react';
+import { Mail, MapPin, Send, Github, Linkedin } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -52,12 +51,6 @@ const Contact = () => {
       label: 'LinkedIn',
       link: 'https://www.linkedin.com/in/k-surya-b21a93301/',
       color: 'blue'
-    },
-    {
-      icon: FileText,
-      label: 'Resume',
-      link: '#',
-      color: 'green'
     }
   ];
 
