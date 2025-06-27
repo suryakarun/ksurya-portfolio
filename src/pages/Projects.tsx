@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ExternalLink, Github, Cpu, Mouse, Heart, MessageSquare } from 'lucide-react';
+import { ExternalLink, Github, Cpu, Mouse, Heart, MessageSquare, DollarSign, ShoppingBag } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -10,31 +10,39 @@ const Projects = () => {
       tech: ['Python', 'OpenCV', 'Machine Learning', 'Computer Vision'],
       icon: Mouse,
       color: 'cyan',
-      category: 'AI/ML'
+      category: 'AI/ML',
+      github: 'https://github.com/suryakarun',
+      demo: '#'
     },
     {
-      title: 'Multi-Disease Prediction App',
-      description: 'A comprehensive machine learning application that can predict multiple diseases based on user symptoms and medical data, helping in early diagnosis.',
-      tech: ['Python', 'Machine Learning', 'Flask', 'Data Science'],
-      icon: Heart,
-      color: 'red',
-      category: 'Healthcare AI'
+      title: 'Easy Smart Loan',
+      description: 'A comprehensive loan management system that simplifies the loan application process with smart features and user-friendly interface.',
+      tech: ['React', 'JavaScript', 'Node.js', 'Database'],
+      icon: DollarSign,
+      color: 'green',
+      category: 'FinTech',
+      github: 'https://github.com/suryakarun/easy-smart-loan',
+      demo: '#'
+    },
+    {
+      title: 'UrbanVibe E-Commerce',
+      description: 'A modern e-commerce platform featuring responsive design, shopping cart functionality, and seamless user experience for urban lifestyle products.',
+      tech: ['React', 'JavaScript', 'CSS3', 'E-commerce'],
+      icon: ShoppingBag,
+      color: 'purple',
+      category: 'E-Commerce',
+      github: 'https://github.com/suryakarun/urbanvibe-e-commerce',
+      demo: '#'
     },
     {
       title: 'Legal Information Chatbot',
       description: 'An intelligent chatbot designed to simplify legal information for users, making legal advice and information more accessible to the general public.',
       tech: ['Python', 'NLP', 'AI', 'Flask', 'Legal APIs'],
       icon: MessageSquare,
-      color: 'green',
-      category: 'AI Assistant'
-    },
-    {
-      title: 'Responsive Web Applications',
-      description: 'Collection of fully responsive web applications built with modern frontend technologies, focusing on user experience and performance.',
-      tech: ['React', 'JavaScript', 'Tailwind CSS', 'HTML5', 'CSS3'],
-      icon: Cpu,
-      color: 'purple',
-      category: 'Frontend'
+      color: 'red',
+      category: 'AI Assistant',
+      github: 'https://github.com/suryakarun',
+      demo: '#'
     }
   ];
 
@@ -85,14 +93,22 @@ const Projects = () => {
               </div>
               
               <div className="flex space-x-4">
-                <button className={`flex items-center space-x-2 text-${project.color}-400 hover:text-white transition-colors group-hover:scale-105 transform duration-200 font-mono text-sm`}>
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`flex items-center space-x-2 text-${project.color}-400 hover:text-white transition-colors group-hover:scale-105 transform duration-200 font-mono text-sm`}
+                >
                   <Github size={16} />
                   <span>Code</span>
-                </button>
-                <button className={`flex items-center space-x-2 text-${project.color}-400 hover:text-white transition-colors group-hover:scale-105 transform duration-200 font-mono text-sm`}>
+                </a>
+                <a
+                  href={project.demo}
+                  className={`flex items-center space-x-2 text-${project.color}-400 hover:text-white transition-colors group-hover:scale-105 transform duration-200 font-mono text-sm`}
+                >
                   <ExternalLink size={16} />
                   <span>Demo</span>
-                </button>
+                </a>
               </div>
             </div>
           ))}
@@ -102,12 +118,12 @@ const Projects = () => {
         <div className="bg-gradient-to-r from-cyan-500/10 to-purple-500/10 rounded-lg border border-cyan-500 border-opacity-30 p-8 mb-8">
           <h2 className="text-2xl font-bold text-white font-mono mb-4 flex items-center">
             <span className="text-cyan-400 mr-2">{'>'}</span>
-            Featured: AI-Powered Solutions
+            Featured: Full-Stack Solutions
           </h2>
           <p className="text-gray-300 leading-relaxed mb-6">
-            My projects focus on solving real-world problems through innovative use of AI and machine learning. 
-            From gesture recognition to healthcare predictions, each project demonstrates practical applications 
-            of cutting-edge technology to improve user experiences and accessibility.
+            My projects focus on solving real-world problems through innovative web development and AI solutions. 
+            From e-commerce platforms to fintech applications, each project demonstrates practical applications 
+            of modern technologies to improve user experiences and business efficiency.
           </p>
           
           <div className="grid md:grid-cols-3 gap-4">
@@ -139,8 +155,8 @@ const Projects = () => {
             <div><span className="text-purple-400">def</span> <span className="text-yellow-400">showcase_projects</span>():</div>
             <div className="ml-4">projects = [</div>
             <div className="ml-8"><span className="text-green-300">"Gesture Mouse Control"</span>,</div>
-            <div className="ml-8"><span className="text-green-300">"Disease Prediction AI"</span>,</div>
-            <div className="ml-8"><span className="text-green-300">"Legal Chatbot"</span></div>
+            <div className="ml-8"><span className="text-green-300">"Easy Smart Loan"</span>,</div>
+            <div className="ml-8"><span className="text-green-300">"UrbanVibe E-Commerce"</span></div>
             <div className="ml-4">]</div>
             <div className="ml-4"><span className="text-purple-400">return</span> <span className="text-green-300">"Innovation in every line of code"</span></div>
           </div>
