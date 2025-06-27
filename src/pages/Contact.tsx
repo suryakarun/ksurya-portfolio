@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, MessageSquare } from 'lucide-react';
+import { Mail, MapPin, Send, Github, Linkedin, FileText } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -27,16 +27,9 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'surya.developer@email.com',
-      link: 'mailto:surya.developer@email.com',
+      value: 'suryakarnakaran@gmail.com',
+      link: 'mailto:suryakarnakaran@gmail.com',
       color: 'cyan'
-    },
-    {
-      icon: Phone,
-      label: 'Phone',
-      value: '+91 XXXXX XXXXX',
-      link: 'tel:+91XXXXXXXXX',
-      color: 'green'
     },
     {
       icon: MapPin,
@@ -51,20 +44,20 @@ const Contact = () => {
     {
       icon: Github,
       label: 'GitHub',
-      link: '#',
+      link: 'https://github.com/suryakarun',
       color: 'white'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      link: '#',
+      link: 'https://www.linkedin.com/in/k-surya-b21a93301/',
       color: 'blue'
     },
     {
-      icon: MessageSquare,
-      label: 'Discord',
+      icon: FileText,
+      label: 'Resume',
       link: '#',
-      color: 'indigo'
+      color: 'green'
     }
   ];
 
@@ -193,6 +186,8 @@ const Contact = () => {
                   <a
                     key={label}
                     href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`flex items-center space-x-4 p-4 bg-black bg-opacity-30 rounded-lg border border-${color}-500 border-opacity-30 hover:border-opacity-100 transition-all duration-300 transform hover:scale-102 group`}
                   >
                     <Icon className={`text-${color}-400`} size={24} />
