@@ -44,13 +44,26 @@ const Home = () => {
           </div>
 
           <div className="flex space-x-6">
-            <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors transform hover:scale-110">
+            <a 
+              href="https://github.com/suryakarun" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-cyan-400 transition-colors transform hover:scale-110"
+            >
               <Github size={24} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors transform hover:scale-110">
+            <a 
+              href="https://www.linkedin.com/in/k-surya-b21a93301/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-cyan-400 transition-colors transform hover:scale-110"
+            >
               <Linkedin size={24} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors transform hover:scale-110">
+            <a 
+              href="mailto:suryakarnakaran@gmail.com" 
+              className="text-gray-400 hover:text-cyan-400 transition-colors transform hover:scale-110"
+            >
               <Mail size={24} />
             </a>
           </div>
