@@ -30,7 +30,7 @@ const Home = () => {
 
           <div className="flex flex-wrap gap-4">
             <a
-              href="#"
+              href="https://ksurya-resume.tiiny.site"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center space-x-2 bg-cyan-500 hover:bg-cyan-400 text-black px-6 py-3 rounded-lg font-mono font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30"
